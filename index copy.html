@@ -7,10 +7,26 @@
   <link rel="stylesheet" media="screen and (min-width: 600px)" href="dmdd%20copy.css">
 <link rel="stylesheet" media="screen and (max-width: 600px)" href="mobile.css">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
 
+    <!-- Top Navigation Menu -->
+<div class="topnav">
+  <a href="#home" class="active">About me Joleon</a>
+  <!-- Navigation links (hidden by default) -->
+  <div id="myLinks">
+    <a href="#about">About me</a>
+    <a href="#websites">My favourite sites</a>
+    <a href="#music">My everyday</a>
+  </div>
+  <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+    
     <!-- The next line will add an image to your page -->
     <img src="Jo.jpg">
 
@@ -21,7 +37,7 @@
 
     <hr>
 
-    <h2>About me</h2>
+    <h2 id="about">About me</h2>
 
     <p>Hi my name is joleon and i am currently in my 2nd year at Birkbeck studying Japan with Media and Film.</p>   
     
@@ -29,7 +45,7 @@
     
     <p>LOOKING FORWARD TO WORKING WITH YOU ALL AND LEARNING</p>
 
-    <h2>My favourite Web sites</h2>
+    <h2 id="websites">My favourite Web sites</h2>
 
     <!--edit the links and the URLs below for your favourite sites -->
 
@@ -39,10 +55,34 @@
         <li><a href="http://www.spotify.com">MY EARS </a></li>
     </ol>
 
-    <h2>My everyday</h2>
+    <h2 id="music">My everyday</h2>
     
     <iframe width="560" height="315" src="https://www.youtube.com/embed/5qap5aO4i9A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   
     
     
 </body>
+
+    <script type="text/x-javascript">
+    
+    /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+    
+    
+    
+    
+    </script>         
+            
+            
+            
+            
+            
+
+            
